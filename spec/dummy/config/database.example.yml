@@ -1,0 +1,12 @@
+# CREATE USER test_user WITH PASSWORD 'test_password';
+# CREATE SCHEMA test AUTHORIZATION test_user;
+host: CLUSTERNAME.IDENTIFIER.REGION.redshift.amazonaws.com
+port: 5432
+username: test_user
+password: test_password
+database: dev
+#As RedShift does not support RETURNING keyword yet
+use_insert_returning: false
+# ssl: true
+# search_path:
+# role:
